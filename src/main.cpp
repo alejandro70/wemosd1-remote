@@ -16,6 +16,7 @@
 #define LED_BUILTIN 13 // LED Indicador
 #define PIN_IR_LED D2  // Infra-Red LED
 
+// códigos de comandos para control remoto RM_AMU178
 #define RM_AMU178_POWER 0xA81
 #define RM_AMU178_SLEEP 0x61
 #define RM_AMU178_VOLUME_UP 0x481
