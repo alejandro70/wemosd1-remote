@@ -28,11 +28,10 @@
 #define RM_AMU178_MEMORY_5 0x201
 #define RM_AMU178_MEMORY_6 0xA01
 
-/* ---------- DECLARACION DE VARIABLES ---------- */
 IRsend irsend(PIN_IR_LED);           // An IR LED is controlled by GPIO pin 4 (D2)
 volatile bool touch_state = false;   // ID of the pin has changed
-void Send_AMU178(unsigned long key); // envío IR code
-void TurnOn_AMU178(void);
+void Send_AMU178(unsigned long key); // envío comando Sony IR code
+void TurnOn_AMU178(void);            // secuencia de inicio: POWER & SLEEP X 9
 
 void setup()
 {
